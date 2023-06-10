@@ -1,38 +1,123 @@
-.App {
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+}
+
+
+.App-header {
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+ 
+}
+
+.small {
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+}
+
+.fullstack {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.fullstack-text {
+  display: flex;
+  align-items: center;
+}
+
+.fullstack-text p {
+  font-size: 52px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-weight: 900;
+
+}
+
+.icons {
+  display: flex;
+}
+
+.icon {
+  font-size: 40px;
+  margin-right: 10px;
+  color: black;
+  transition: color 0.3s ease;
+  
+}
+
+.icon:hover {
+  color: #a8c0ff;
+}
+
+.desenvolvedor {
+  font-size: 42px;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+   
+}
+
+.intro-text {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  flex-basis: calc(50% - 10px);
+  padding: 20px;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project img {
+  width: 50%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.project h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.project p {
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  background: linear-gradient(135deg, #f2f0cb, #d4c3db);
+  padding-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+section h2 {
+  text-align: center;
+  font-size: 42px;
+  
+}
+
+@media (max-width: 768px) {
+  .project {
+    flex-basis: 100%;
+    margin-bottom: 20px;
   }
 }
