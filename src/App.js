@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { FiDownload } from "react-icons/fi";
+import { FiDownload, FiExternalLink, FiGithub } from "react-icons/fi";
 import abc from "./abcdovoleibol.png";
 import tamhelp from "./tamhelp.png";
 import eu from "./lucas.png";
@@ -41,28 +41,42 @@ function App() {
             </div>
             <h2 className="desenvolvedor">Developer</h2>
             <p className="intro-text">
-              Tenho 20 anos de idade com 2 anos de experiência <br></br>trabalhando em projetos em
-              produção.
+              Tenho 20 anos de idade com 2 anos de experiência <br />trabalhando em projetos em produção.
             </p>
             <a href="#projetos" className="projetos-button">
-            Ver Projetos
-          </a>
+              Ver Projetos
+            </a>
           </header>
         </div>
-      
       </div>
       <section id="projetos">
-        <h2>Meus Projetos</h2>
+        <h2>Principais Projetos</h2>
         <div className="projects-section">
           <div className="project">
             <img src={abc} alt="Projeto 1" />
             <h3>Associação ABC Do Voleibol</h3>
             <p>Breve explicação do Projeto 1.</p>
+            <div className="project-buttons">
+              <a href="link-deploy" target="_blank" rel="noopener noreferrer">
+                <FiExternalLink className="project-icon" />
+              </a>
+              <a href="link-github" target="_blank" rel="noopener noreferrer">
+                <FiGithub className="project-icon" />
+              </a>
+            </div>
           </div>
           <div className="project">
             <img src={tamhelp} alt="Projeto 2" />
             <h3>TamHelp - Gestão de chamados</h3>
             <p>Breve explicação do Projeto 2.</p>
+            <div className="project-buttons">
+              <a href="link-deploy" target="_blank" rel="noopener noreferrer">
+                <FiExternalLink className="project-icon" />
+              </a>
+              <a href="link-github" target="_blank" rel="noopener noreferrer">
+                <FiGithub className="project-icon" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
