@@ -3,6 +3,8 @@ import "./App.css";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import abc from "./abcdovoleibol.png";
+import tamhelp from "./tamhelp.png";
+import eu from "./lucas.png";
 
 function App() {
   return (
@@ -37,29 +39,29 @@ function App() {
                 </div>
               </div>
             </div>
-            <h2 className="desenvolvedor">Desenvolvedor</h2>
+            <h2 className="desenvolvedor">Developer</h2>
             <p className="intro-text">
-              Tenho 20 anos com 2 anos de 
-              <br></br>experiência trabalhando 
-             
-              em projetos 
-               em
+              Tenho 20 anos de idade com 2 anos de experiência <br></br>trabalhando em projetos em
               produção.
             </p>
+            <a href="#projetos" className="projetos-button">
+            Ver Projetos
+          </a>
           </header>
         </div>
+      
       </div>
-      <section>
+      <section id="projetos">
         <h2>Meus Projetos</h2>
         <div className="projects-section">
           <div className="project">
             <img src={abc} alt="Projeto 1" />
-            <h3>Título do Projeto 1</h3>
+            <h3>Associação ABC Do Voleibol</h3>
             <p>Breve explicação do Projeto 1.</p>
           </div>
           <div className="project">
-            <img src="projeto-2.png" alt="Projeto 2" />
-            <h3>Título do Projeto 2</h3>
+            <img src={tamhelp} alt="Projeto 2" />
+            <h3>TamHelp - Gestão de chamados</h3>
             <p>Breve explicação do Projeto 2.</p>
           </div>
         </div>
